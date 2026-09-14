@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * CheckPoint 5 - Automação de Testes Funcionais da Tela de Login
  * Projeto: Validação de Segurança (ISO 27001) e Conformidade QA
  * Target: https://www.saucedemo.com/
- * Tecnologias: Java 17+, JUnit 5, Selenium WebDriver 4
+ * Tecnologias: Java 21+, JUnit 5, Selenium WebDriver 4
  */
 @DisplayName("CheckPoint 5 - Automação de Testes de Login (SauceDemo)")
 public class LoginTest {
@@ -38,7 +38,7 @@ public class LoginTest {
 
     @BeforeEach
     void abrirNavegador() {
-        WebDriverManager.chromedriver().setup(); // &lt;- Adicionar esta linha
+        WebDriverManager.chromedriver().setup();
         // Inicializa o Chrome via Selenium 4 (Selenium Manager baixa o driver automaticamente)
         driver = new ChromeDriver();
         driver.manage().window().maximize();
